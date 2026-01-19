@@ -77,9 +77,9 @@ function ImageCarousel() {
     const [direction, setDirection] = useState(0);
 
     const slideVariants = {
-        enter: (direction) => ({ x: direction > 0 ? 300 : -300, opacity: 0 }),
+        enter: (direction) => ({ x: direction > 0 ? '100%' : '-100%', opacity: 1 }),
         center: { zIndex: 1, x: 0, opacity: 1 },
-        exit: (direction) => ({ zIndex: 0, x: direction < 0 ? 300 : -300, opacity: 0 })
+        exit: (direction) => ({ zIndex: 0, x: direction < 0 ? '100%' : '-100%', opacity: 1 })
     };
 
     const swipeConfidenceThreshold = 5000;
@@ -110,7 +110,7 @@ function ImageCarousel() {
                     initial="enter"
                     animate="center"
                     exit="exit"
-                    transition={{ x: { type: "spring", stiffness: 300, damping: 30 }, opacity: { duration: 0.2 } }}
+                    transition={{ x: { type: "spring", stiffness: 300, damping: 30 } }}
                     drag="x"
                     dragConstraints={{ left: 0, right: 0 }}
                     dragElastic={1}
@@ -232,7 +232,7 @@ function ImageCarousel() {
                 boxShadow: '0 10px 25px rgba(250, 204, 21, 0.3)',
                 transform: 'rotate(-12deg)',
                 zIndex: 10
-            }}>Rp {PRODUCT_PRICE.toLocaleString('id-ID')}/pcs</div>
+            }}>Rp {PRODUCT_PRICE.toLocaleString('id-ID')}</div>
         </div>
     );
 }
