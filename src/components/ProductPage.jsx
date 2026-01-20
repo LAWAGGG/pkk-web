@@ -6,7 +6,7 @@ import dumpling3 from '../assets/dumpling3.png';
 
 const WHATSAPP_NUMBER = "62895383307167";
 const PRODUCT_NAME = "Dumpling";
-const PRODUCT_PRICE = 10000;
+const PRODUCT_PRICE = 12000;
 const PRODUCT_DESC = "Dumpling isi ayam, cocok untuk cemilan atau teman makan nasi!";
 
 // Product images/slides
