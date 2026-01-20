@@ -98,7 +98,7 @@ function ImageCarousel() {
     return (
         <div style={{
             position: 'relative',
-            height: '20rem',
+            height: '23rem',
             overflow: 'hidden',
             background: productImages[currentIndex].bg
         }}>
